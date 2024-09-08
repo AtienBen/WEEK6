@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁</title>
+ </head>
+  <body>
+    <%- include('./layout/header'); -%>
+      <main>
+        <section class="container py-md-7 py-lg-10">
+          <div class="mb-4 rounded-3 position-relative">
+            <picture>
+              <source media="(min-width: 992px)" srcset="/assets/images/banner.png">
+              <img src="/assets/images/banner-sm.png" alt="banner" class="w-100">
+            </picture>
+            <div class="banner-title ">              
+              <div class="h5 c-white">獻給新世代的生活風格誌</div>
+              <div class="h1 c-white">一起探索生活的無限可能</div>
+              <div class="btn btn-secondary-200 text-white fs-lg-5">馬上訂閱→</div>
+            </div>
+          </div>
+        </section>
+        <section class="container py-lg-10 py-8">
+          <h2 class="fs-lg-2 fs-4 mb-5">熱門主題</h2>
+          <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 gy-5">
+            <div class="col">
+              <div class="theme-card">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/theme-1.png" />
+                  <img src="../assets/images/theme-1-sm.png" alt="" class="w-100" />
+                </picture>
+              </div>
+            </div>
+            <div class="col">
+              <div class="theme-card">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/theme-2.png" />
+                  <img src="../assets/images/theme-2-sm.png" alt="" class="w-100" />
+                </picture>
+              </div>
+            </div>
+            <div class="col">
+              <div class="theme-card">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/theme-3.png" />
+                  <img src="../assets/images/theme-3-sm.png" alt="" class="w-100" />
+                </picture>
+              </div>
+            </div>
+            <div class="col">
+              <div class="theme-card">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/theme-4.png" />
+                  <img src="../assets/images/theme-4-sm.png" alt="" class="w-100" />
+                </picture>
+              </div>
+            </div>
+            <div class="col">
+              <div class="theme-card">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/theme-5.png" />
+                  <img src="../assets/images/theme-5-sm.png" alt="" class="w-100" />
+                </picture>
+              </div>
+            </div>
+            <div class="col">
+              <div class="theme-card">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/theme-6.png" />
+                  <img src="../assets/images/theme-6-sm.png" alt="" class="w-100" />
+                </picture>
+              </div>
+            </div>
+            <div class="col">
+              <div class="theme-card">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/theme-7.png" />
+                  <img src="../assets/images/theme-7-sm.png" alt="" class="w-100" />
+                </picture>
+              </div>
+            </div>
+            <div class="col">
+              <div class="theme-card">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/theme-8.png" />
+                  <img src="../assets/images/theme-8-sm.png" alt="" class="w-100" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 精選文章 -->
+        <section class="bg-primary-200">
+          <div class="container position-relative py-lg-10 py-8">
+            <div class="hito-content">
+              <h2 class="fs-lg-2 fs-4 mb-5">熱門主題</h2>
+              <p class="fs-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero repellendus assumenda modi neque enim,
+                dicta consequuntur repudiandae, tenetur voluptas corrupti fugit laborum voluptatibus ex sed sunt dolores
+                porro animi. Fugit.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>  
+  </body>
+</html>

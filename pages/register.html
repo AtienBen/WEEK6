@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊/登入</title>
+ </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center py-11">
+                <div class="col-lg-6">
+                    <div class="registerForm d-flex flex-column justify-content-between border border-primary-300 p-7 w-100">
+                        <h4 class="text-secondary-200 mb-5 mb-lg-7">註冊</h4>
+                        <form action="#">
+                            <label for="account" class="mb-1 mb-lg-2">會員帳號</label>
+                            <input type="text" id="account" name="account" placeholder="請輸入會員帳號" class="d-block formInput mb-3">
+        
+                            <label for="pwd" class="mb-1 mb-lg-2">密碼</label>
+                            <input type="password" id="pwd" name="pwd" placeholder="請輸入密碼" class="d-block formInput mb-3">
+                            
+                            <label for="email" class="mb-1 mb-lg-2">電子信箱</label>
+                            <input type="email" id="email" name="email" placeholder="請輸入電子信箱" class="d-block formInput mb-3">
+        
+                            <button class="btn btn-secondary-200 text-white fs-lg-5 w-100" type="submit">立即註冊<i class="bi bi-arrow-right ms-2"></i></button>
+                        </form>
+                        <div class="py-7 text-center position-relative">
+                            <p class="otherLogin position-absolute text-gray-300 top-50 start-50 translate-middle bg-white ">或以其他方式註冊</p>
+                            <hr>
+                        </div>
+                        <button class="btn btn-light mb-1" type="submit"><img class="me-1" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-google.png?raw=true" alt="google">使用 Google 註冊</button>
+                        <button class="btn btn-light mb-1" type="submit"><img class="me-1" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-facebook.png?raw=true" alt="google">使用 Facebook 註冊</button>
+    
+                        <div class="d-flex justify-content-center py-4">
+                            <p class="me-2">已經是會員了？</p>
+                            <p><a href="#" class="text-secondary-200">點此登入</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>  
+  </body>
+</html>
